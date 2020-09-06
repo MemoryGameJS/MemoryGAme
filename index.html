@@ -1,0 +1,97 @@
+<html>
+<title>Memory game</title>
+<head>
+<link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+<image class="background" src="theme.jpg"></image>
+<h1>welcome username_name , Lets play</h1>
+<section class="full-page">
+
+<!---------------------------------left-div starts ---------------------------------------------------->
+<div class="left-div">
+<h1>MEMORY GAME</h1>
+<div class="btns">
+<button>MENU</button>
+</div>
+</div>
+<!---------------------------------left-div ends--------- ---------------------------------------------------->
+
+
+
+<!----------------------------------cards part starts  -------------------------------------------------------------------->
+<div class="cards-box">
+<div class="top-div">
+    <div id="a" class="card hidden" ></div>
+    <div id="b" class="card hidden" ></div>
+    <div id="c" class="card hidden" ></div>
+    <div id="d" class="card hidden" > </div>
+    <div id="e" class="card hidden" ></div>
+    <div id="f" class="card hidden"  ></div>
+</div>
+<div class="top-div">
+    <div id="g" class="card hidden" ></div>
+    <div id="h" class="card hidden" ></div>
+    <div id="i" class="card hidden" ></div>
+    <div id="j" class="card hidden" ></div>
+    <div id="l" class="card hidden" ></div>
+    <div id="m" class="card hidden" > </div>
+</div>
+<div class="top-div">
+<div id="n" class="card hidden" ></div>
+<div id="o" class="card hidden" ></div>
+<div id="p" class="card hidden" ></div>
+<div id="q" class="card hidden" ></div>
+<div id="r" class="card hidden" ></div>
+<div id="s" class="card hidden" ></div>
+</div>
+<div class="top-div">
+    <div id="t" class="card hidden" > </div>
+    <div id="u" class="card hidden"></div>
+    <div id="v" class="card hidden" ></div>
+    <div id="w" class="card hidden" ></div>
+    <div id="x" class="card hidden" ></div>
+    <div id="y" class="card hidden" ></div>
+</div>
+<!----------------------------------popup-winning starts  -------------------------------------------------------------------->
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>Congratulations!🎉 You have finished the game.</h2>
+        <a class="close" href=# >×</a>
+        <div class="content-1">
+       <p id="message">Congratulations you're a winner 🎉🎉</p>
+        </div>
+        <button id="play-again" onclick="closeModal()">
+            Play again 😄</a>
+        </button>
+    </div>
+</div>
+<!----------------------------------popup-winning ends  -------------------------------------------------------------------->
+
+<!----------------------------------popup-loosing starts  -------------------------------------------------------------------->
+<div class="popup-loosing">
+<h1>TRY AGAIN!!</h1>
+<p>your score is : <span id="score">00</span><p>
+</div>
+</div>
+<!----------------------------------popup-loosing starts  ------------------------------------------------------------------->
+
+<!----------------------------------cards part ends  -------------------------------------------------------------------->
+
+<!----------------------------------right div starts  -------------------------------------------------------------------->
+<div class="right-div">
+<h1>SCORE:-</h1>
+<p id="scores">00<p>
+<div class="time">
+<h1 >TIME:-</h1>
+<h4 id="timer">120</h4>
+</div>
+<button style="margin-top:208px;">RESTART</button>
+</div>
+
+<!----------------------------------right div ends  -------------------------------------------------------------------->
+</div>
+
+</body>
+    <script src="script.js"></script>
+</html>
